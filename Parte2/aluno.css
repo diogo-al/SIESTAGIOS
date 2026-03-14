@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/aluno.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.infoBar{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.2);
+    border-bottom: 0.125rem solid #e3d1ff;
+}
+
+body .infoBar h1 {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.infoBar h1 a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.infoBar h1 a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+body .infoBar .links {
+    list-style: none;
+    margin: 0 0.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.contaAluno {
+    border-radius: 50%;
+    text-decoration: none;
+    color: #f0e6ff;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.contaAluno:hover {
+    transform: scale(1.05);
+    color: #ffc2ff;
+    box-shadow: 0 0 1rem rgb(112, 0, 112);
+}
+
+.perfil {
+    position: relative;
+    display: inline-block;
+}
+
+.menu {
+    position: absolute;
+    top: 35px;
+    right: -20px;
+    background: linear-gradient(120deg, #d946ef, #020617);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 100px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.opcoes {
+    display: flex;
+    margin: 0.3rem 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.perfil:hover .menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; 
+}
+
+.userText{
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 500px;   
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(168, 37, 255, 0.3);
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(150, 90, 255, 0.4);
+}
+
+.alunoContainer{
+    margin-top: 5rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 800px;
+    height: 90vh;
+    max-height: 450px;
+    border: 0.125rem solid rgba(168, 37, 255, 0.3);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.12);
+}
+
+.alunoContainer h2{
+    color: #e8ddff;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    padding-top: 0;
+}
+
+.estagioTabela {
+    margin: 1rem auto 0 auto;
+    border-collapse: collapse;
+    width: 95%;
+    max-width: 800px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.estagioTabela:hover {
+    transform: scale(1.01);
+}
+
+.estagioTabela th, .estagioTabela td {
+    padding: 12px 15px;
+    text-align: left;
+    text-align: center;
+}
+
+.estagioTabela th {
+    background-color: rgba(120, 60, 255, 0.6);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.estagioTabela tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.estagioTabela tbody tr:hover {
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    background-color: rgba(103, 37, 255, 0.2);
+}
+
+.estagioTabela td {
+    color: #f4efff;
+}
+
+.accept{
+    width: 20%;
+    max-width: 300px;
+    padding: 1rem 0rem;
+    margin-top: 4rem;
+    background: linear-gradient(135deg, #7a5fff, #5c3fff);
+    border: 0.125rem solid #a67fff; 
+    box-shadow: 0 0.25rem 0.625rem rgba(90, 50, 200, 0.4);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition: transform 0.3s ease;
+}
+
+.accept:hover{
+    transform: scale(1.03);
+}
+
+.h2Nome{
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 40%;
+    max-width: 250px;   
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    margin-top: 6rem;
+    border: 2px solid rgba(168, 37, 255, 0.3);
+    box-shadow: 0 0 10px rgba(150, 90, 255, 0.4);
+}
+
+.tabelaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.NomeAluno {
+    color: #d400ff;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 0 6px rgba(106, 1, 167, 0.6), 1px 1px 2px rgba(0,0,0,0.25);
+}

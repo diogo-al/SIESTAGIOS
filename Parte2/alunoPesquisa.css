@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/aluno.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.infoBar{
+    background-color: #7a56ff;
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.2);
+    border-bottom: 0.125rem solid #e3d1ff;
+}
+
+body .infoBar h1 {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.infoBar h1 a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.infoBar h1 a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+body .infoBar .links {
+    list-style: none;
+    margin: 0 0.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+body .infoBar .links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #f0e6ff;
+    font-size: 1.25rem;
+    border-bottom: 0.125rem solid transparent;
+    transition: color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    font-weight: bold;
+}
+
+body .infoBar .links a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+     border-bottom-color: #fff;
+}
+
+.userText{
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 500px;   
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(168, 37, 255, 0.3);
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(150, 90, 255, 0.4);
+}
+
+form{
+    margin-top: 5rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 500px;
+    height: 90vh;
+    max-height: 450px;
+    border: 0.125rem solid rgba(168, 37, 255, 0.3);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.12);
+
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1.5625rem rgba(0,0,0,0.18);
+}
+
+form h2{
+    color: #e8ddff;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    padding-top: 0;
+}
+
+
+form .input{
+    border-radius: 0.5rem;
+    width: 90%;
+    padding: 0.75rem;
+    border: 0.0625rem solid rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0.0625rem 0.1875rem rgba(0,0,0,0.1);
+    
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+form .input:hover{
+    transform: scale(1.01);
+    background-color: rgb(212, 180, 255);
+}
+
+form p{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0.3125rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 0.125rem rgba(0,0,0,0.4);
+}
+
+form .input:focus {
+    outline: none;
+    border: 0.125rem solid #c450e7;
+    box-shadow: 0 0 0.5rem rgba(103, 37, 255, 0.5);
+}
+
+
+.accept{
+    width: 70%;
+    padding: 1rem 0rem;
+    margin-top: 2.5rem;
+    background: linear-gradient(135deg, #7a5fff, #5c3fff);
+    border: 0.125rem solid #a67fff; 
+    box-shadow: 0 0.25rem 0.625rem rgba(90, 50, 200, 0.4);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition: transform 0.3s ease;
+}
+
+.accept:hover{
+    transform: scale(1.03);
+}
+
+.NomeAluno {
+    color: #a057ff;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 0 6px rgba(82, 33, 216, 0.685), 1px 1px 2px rgba(0,0,0,0.25);
+}

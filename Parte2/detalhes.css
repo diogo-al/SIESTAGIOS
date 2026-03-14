@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/aluno.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.infoBar{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.2);
+    border-bottom: 0.125rem solid #e3d1ff;
+}
+
+body .infoBar h1 {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.infoBar h1 a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.infoBar h1 a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+body .infoBar .links {
+    list-style: none;
+    margin: 0 0.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+body .infoBar .links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #f0e6ff;
+    font-size: 1.25rem;
+    border-bottom: 0.125rem solid transparent;
+    transition: color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    font-weight: bold;
+}
+
+body .infoBar .links a:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+    border-bottom-color: #fff;
+}
+
+.Empresa{
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 500px;   
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(168, 37, 255, 0.3);
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(150, 90, 255, 0.4);
+}
+
+.estagioTabela {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.estagioTabela:hover {
+    transform: scale(1.01);
+}
+
+.estagioTabela th, .estagioTabela td {
+    white-space: nowrap;
+    padding: 12px 15px;
+    text-align: left;
+    text-align: center;
+}
+
+.estagioTabela th {
+    background-color: rgba(120, 60, 255, 0.6);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.estagioTabela tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.estagioTabela tbody tr:hover {
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    background-color: rgba(103, 37, 255, 0.2);
+}
+
+.estagioTabela td {
+    color: #f4efff;
+}
+
+.tableContainer {
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 3rem auto;
+    margin-bottom: 0.2rem;
+    border-radius: 12px;
+    width: 85%;
+    border-radius: 12px;
+    display: block;
+}
+
+.tableContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+    background: rgba(120, 60, 255, 0.5);
+    border-radius: 10px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.info{
+    width: 70%;
+    color: white;
+    text-align: right;
+}

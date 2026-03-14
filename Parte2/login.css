@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+body .infoBar {
+    background-color: #72acbd;
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.20);
+    border-bottom: 0.125rem solid rgba(255, 255, 255, 0.534);
+}
+
+body .infoBar h1 {
+    margin: 0 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.infoBar h1 a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.infoBar h1 a:hover {
+    transform: scale(1.05);
+}
+
+body .infoBar .links {
+    list-style: none;
+    margin: 0 0.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+body .infoBar .links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #E5E7EB;
+    font-size: 1.25rem;
+    border-bottom: 0.125rem solid transparent;
+    transition: color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    font-weight: bold;
+}
+
+body .infoBar .links a:hover {
+    color: white;
+    transform: scale(1.05);
+    border-bottom-color: white;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    margin: 10vh auto 0 auto;
+    padding: 1.5rem 1.25rem; 
+    width: 90%;
+    max-width: 500px;
+    min-height: 35vh;
+    border-radius: 0.75rem;
+    border: 0.1875rem solid white;
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.12), 0 0.0625rem 0.25rem rgba(0,0,0,0.08) inset;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin-top: 8rem;
+}
+
+form:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1.5625rem rgba(0,0,0,0.18), 0 0.0625rem 0.25rem rgba(255,255,255,0.3) inset;
+}
+
+form .input {
+    border-radius: 0.5rem;
+    width: 95%;
+    padding: 0.75rem;
+    font-weight: bold;
+    color: #000f30;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.9375rem;
+    border: 0.0625rem solid rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0.0625rem 0.1875rem rgba(0,0,0,0.1);
+}
+
+form .input:focus {
+    outline: none;
+    border: 0.125rem solid #5080e7;
+    box-shadow: 0 0 0.5rem rgba(65, 118, 233, 0.5);
+}
+
+form .accept {
+    width: 100%;
+    padding: 0.875rem 0;
+    border-radius: 0.625rem;
+    background: linear-gradient(135deg, #417dff, #1e56d1);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 3rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(65,125,255,0.4);
+    transition: all 0.3s ease;
+}
+
+form .accept:hover {
+    background-color: #1c58ff;
+    transform: scale(1.03);
+}
+
+form h3 {
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    text-shadow: 1px 1px 0.125rem rgba(0,0,0,0.4);
+}
+
+form p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.3125rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 0.125rem rgba(0,0,0,0.4);
+}
+
+.Error {
+    color: rgb(184, 37, 37);
+}
+
+.Info{
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    margin: 10vh auto 0 auto;
+    padding: 1.5rem 1.25rem; 
+    width: 90%;
+    max-width: 500px;
+    min-height: 35vh;
+    border-radius: 0.75rem;
+    border: 0.1875rem solid white;
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.12), 0 0.0625rem 0.25rem rgba(0,0,0,0.08) inset;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin-top: 8rem;
+}
+
+.Info h3 {
+    color: #80e0ff;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    margin-top: 0;
+}
+
+.Info p{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.3125rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 0.125rem rgba(0,0,0,0.4);
+}

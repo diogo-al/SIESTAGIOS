@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/admin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.infoBar{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.2);
+    border-bottom: 0.125rem solid #e3d1ff;
+}
+
+body .infoBar h1 {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.infoBar h1 a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.infoBar h1 a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+body .infoBar .links {
+    list-style: none;
+    margin: 0 0.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+body .infoBar .links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #f0e6ff;
+    font-size: 1.25rem;
+    border-bottom: 0.125rem solid transparent;
+    transition: color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    font-weight: bold;
+}
+
+body .infoBar .links a:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+    border-bottom-color: #fff;
+}
+
+.formContainer{
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 60%;
+    max-width: 350px;
+    border-radius: 8px;
+    padding: 0.6rem 0.2rem;
+    box-shadow: 0 0 10px rgba(82, 163, 255, 0.4);
+    border: 2px solid rgba(75, 153, 255, 0.3);
+    margin-bottom: 2rem;
+}
+
+.formContainer select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 95%;
+    padding: 2rem 0rem;
+    margin: 0.2rem 0rem;
+    border: 0px transparent;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.formContainer select:hover,
+.formContainer select:focus {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.3), rgba(0, 153, 255, 0.3));
+    box-shadow: 0 0 0.6rem rgba(0,229,255,0.3);
+    outline: none;
+    border-color: rgba(0,255,255,0.6);
+}
+
+.formContainer select option {
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #00aeff;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 0 6px rgba(0, 153, 255, 0.6), 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.userText{
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 400px;   
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(75, 153, 255, 0.3);
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(82, 163, 255, 0.4);
+}
+
+.NomeAdmin {
+    color: #00aeff;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 0 6px rgba(0, 153, 255, 0.6), 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.butao{
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    padding: 0.6rem 0.2rem;
+    box-shadow: 0 0 10px rgba(82, 163, 255, 0.4);
+    border: 2px solid rgba(75, 153, 255, 0.3);
+    width: 60%;
+    margin: 0.1rem 0;
+    max-width: 200px;
+    padding: 1rem 0rem;
+}
+
+.butao:hover{
+    transform: scale(1.03);
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.3), rgba(0, 153, 255, 0.3));
+    box-shadow: 0 0 0.6rem rgba(0,229,255,0.3);
+    outline: none;
+    border-color: rgba(0,255,255,0.6);
+    cursor: pointer;
+}
+
+.linha{
+    display: block;
+    width: 90%;
+    height: 2px;
+    margin: 0.5rem auto;
+    background: linear-gradient(90deg, #092bc055, #2cabff55, #092bc055);
+    border-radius: 2px;
+}
+
+.data {
+    background-color: rgba(0, 0, 0, 0);   /* fundo semi-transparente */
+    color: white;                           /* texto ciano */
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 0px transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 95%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.data:hover,
+.data:focus {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, rgba(0, 229, 255, 0.3), rgba(0, 153, 255, 0.3));
+    box-shadow: 0 0 0.6rem rgba(0,229,255,0.3);
+    outline: none;
+    border-color: rgba(0,255,255,0.6);
+}

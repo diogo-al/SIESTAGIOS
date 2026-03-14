@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/formador.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.infoBar{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.2);
+    border-bottom: 0.125rem solid #e3d1ff;
+}
+
+body .infoBar h1 {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.infoBar h1 a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.infoBar h1 a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+body .infoBar .links {
+    list-style: none;
+    margin: 0 0.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+body .infoBar .links a {
+    text-decoration: none;
+    display: inline-block;
+    color: #f0e6ff;
+    font-size: 1.25rem;
+    border-bottom: 0.125rem solid transparent;
+    transition: color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    font-weight: bold;
+}
+
+body .infoBar .links a:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+    border-bottom-color: #fff;
+}
+
+.userText{
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 400px;   
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(0, 190, 79, 0.3);
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(0, 248, 54, 0.555);
+}
+
+.NomeFormador {
+    color: #00e61f;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 0 6px rgba(0, 255, 55, 0.6), 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+p{
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 700px;   
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(0, 190, 79, 0.3);
+    margin-top: 6rem;
+    box-shadow: 0 0 10px rgba(0, 248, 54, 0.555);
+    padding: 2rem 0;
+}
+
+.butao{
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 40%;
+    max-width: 200px;   
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(0, 190, 79, 0.3);
+    box-shadow: 0 0 10px rgba(0, 248, 54, 0.555);
+    padding: 1rem 0;
+    margin: 6rem 2rem;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.butao:hover{
+    transform: scale(1.1);
+    background-color: #00e41e1f;
+}

@@ -1,0 +1,20 @@
+window_sizes 1920 991 0 1914 809 128
+
+diagrams
+  active  classdiagram_ref 128002 // SIESTAGIOS
+    1914 809 75 A1 51 0
+end
+show_stereotypes
+selected attribute_ref 138639 // Fechamento
+open
+  class_ref 128258 // Formador
+  class_ref 134543 // Empresa
+  class_ref 134671 // Disciplina
+  class_ref 134799 // Responsavel
+  class_ref 134927 // Cargos
+  class_ref 135055 // Estagio
+  class_ref 135183 // RamoAtividade
+  class_ref 135311 // Estabelecimento
+  class_ref 135439 // HorarioFunc
+end
+end

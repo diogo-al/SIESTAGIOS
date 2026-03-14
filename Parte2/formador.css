@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/formador.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.infoBar{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.2);
+    border-bottom: 0.125rem solid #e3d1ff;
+}
+
+body .infoBar h1 {
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.infoBar h1 a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: transparent;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.infoBar h1 a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+body .infoBar .links {
+    list-style: none;
+    margin: 0 0.25rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.contaFormador {
+    border-radius: 50%;
+    text-decoration: none;
+    color: #f0e6ff;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.contaFormador:hover {
+    transform: scale(1.05);
+    color: #4fe64ca1;
+    box-shadow: 0 0 1rem rgb(112, 0, 112);
+}
+
+.perfil {
+    position: relative;
+    display: inline-block;
+}
+
+.menu {
+    position: absolute;
+    top: 35px;
+    right: -20px;
+    background: linear-gradient(120deg, #6ee7b7, #065f46, #020617);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 100px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.opcoes {
+    display: flex;
+    margin: 0.3rem 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.perfil:hover .menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; 
+}
+
+.userText{
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 400px;   
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(0, 190, 79, 0.3);
+    margin-top: 4rem;
+    box-shadow: 0 0 10px rgba(0, 248, 54, 0.555);
+}
+
+.NomeFormador {
+    color: #00e61f;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 0 6px rgba(0, 255, 55, 0.6), 1px 1px 2px rgba(0,0,0,0.25);
+}
+
+.ideaPrincipal{
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 400px;   
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    padding: 0.5rem 0rem;
+    border: 2px solid rgba(0, 190, 79, 0.3);
+    margin-top: 5rem;
+    box-shadow: 0 0 10px rgba(0, 248, 54, 0.555);
+    font-size: 1.2rem;
+}
+
+.formadorTabela {
+    margin: 1rem auto 0 auto;
+    border-collapse: collapse;
+    width: 95%;
+    max-width: 800px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0.25rem 3rem rgba(0, 70, 0, 0.616);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.formadorTabela:hover {
+    transform: scale(1.01);
+}
+
+.formadorTabela th, .formadorTabela td {
+    padding: 12px 15px;
+    text-align: left;
+    text-align: center;
+}
+
+.formadorTabela th {
+    background-color: rgba(0, 255, 42, 0.6);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.formadorTabela tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.formadorTabela tbody tr{
+    cursor: pointer;
+}
+
+.formadorTabela tbody tr:hover {
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    background-color: rgba(0, 150, 25, 0.2);
+}
+
+.formadorTabela td {
+    color: #e0d0ff;
+}
